@@ -1,0 +1,462 @@
+doctype html
+//if IE 9
+	html.ie9(lang='en')  
+// [if !IE] <!
+html(lang='en')
+	// <![endif]
+	head
+		meta(charset='utf-8')
+		title OIT 
+
+		meta(name='description', content='Worthy a Bootstrap-based, Responsive HTML5 Template')
+		meta(name='author', content='htmlcoder.me')
+		// Mobile Meta
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		// Favicon
+		link(rel='shortcut icon', href='images/favicon.ico')
+		// Web Fonts
+		link(href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&subset=latin,latin-ext', rel='stylesheet', type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Raleway:700,400,300', rel='stylesheet', type='text/css')
+		// Bootstrap core CSS
+		link(href='bootstrap/css/bootstrap.css', rel='stylesheet')
+		// Font Awesome CSS
+		link(href='fonts/font-awesome/css/font-awesome.css', rel='stylesheet')
+		// Plugins
+		link(href='css/animations.css', rel='stylesheet')
+		// Worthy core CSS file
+		link(href='css/style.css', rel='stylesheet')
+		// Custom css
+		link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.css', rel='stylesheet')
+
+		link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css', rel='stylesheet')
+
+
+		link(href='css/custom.css', rel='stylesheet')
+		script(type='text/javascript', src='plugins/jquery.min.js')
+		script(type='text/javascript', src='bootstrap/js/bootstrap.min.js')
+		// Modernizr javascript
+		script(type='text/javascript', src='plugins/modernizr.js')
+		// Isotope javascript
+		script(type='text/javascript', src='plugins/isotope/isotope.pkgd.min.js')
+		// Backstretch javascript
+		script(type='text/javascript', src='plugins/jquery.backstretch.min.js')
+		// Appear javascript
+		script(type='text/javascript', src='plugins/jquery.appear.js')
+		// Initialization of Plugins
+		script(type='text/javascript', src='js/template.js')
+		// Custom Scripts
+		script(type='text/javascript', src='js/custom.js')
+		script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js')
+
+
+
+	body.no-trans
+		.scrollToTop
+			i.icon-up-open-big
+		//- header.header.fixed.clearfix.navbar.navbar-fixed-top
+		//-           .site-name-and-slogan.smooth-scroll
+		//-       .col-md-8
+		//-         .header-right.clearfix
+		//-           .main-navigation.animated
+		#banner.banner
+			.banner-image
+			.banner-caption
+				.section-nav
+					.container
+						.row
+							.col-md-8.col-md-offset-2.object-non-visible(data-animation-effect='fadeIn')
+								.row.object-non-visible(data-animation-effect='fadeIn')
+									.col-md-12
+										// isotope filters start
+										.filters
+											ul.nav.nav-pills.text-center
+												//- li.active
+												//-   a(href='#', data-filter='*') All
+												li.active
+													a(href='#', data-filter='.web-spanish') spanish
+												li
+													a(href='#', data-filter='.web-life') life
+												li
+													a(href='#', data-filter='.web-travel') travel
+										// isotope filters end
+										// portfolio items start
+										.isotope-container.row.grid-space-20
+											.col-sm-6.col-md-2-5.isotope-item.web-spanish
+												.image-box
+													.overlay-container
+														img(src='images/button2.jpg', alt='' )
+														a.overlay(data-toggle='modal', data-target='#project-1')
+															i.fa.fa-search-plus
+															span App Development
+
+
+												// Modal
+												#project-1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-1-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-1-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button2.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-life
+												.image-box
+													.overlay-container
+														img(src='images/button1.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-2')
+															i.fa.fa-search-plus
+															span App Development
+
+												// Modal
+												#project-2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-2-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-2-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button1.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-spanish
+												.image-box
+													.overlay-container
+														img(src='images/button3.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-3')
+															i.fa.fa-search-plus
+															span Web Design
+
+												// Modal
+												#project-3.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-3-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-3-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button3.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-travel
+												.image-box
+													.overlay-container
+														img(src='images/button4.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-4')
+															i.fa.fa-search-plus
+															span Site Building
+
+												// Modal
+												#project-4.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-4-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-4-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button4.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-life
+												.image-box
+													.overlay-container
+														img(src='images/button5.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-5')
+															i.fa.fa-search-plus
+															span App Development
+
+												// Modal
+												#project-5.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-5-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-5-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button5.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-life
+												.image-box
+													.overlay-container
+														img(src='images/button6.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-6')
+															i.fa.fa-search-plus
+															span Web Design
+
+												// Modal
+												#project-6.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-6-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-6-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button6.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-travel
+												.image-box
+													.overlay-container
+														img(src='images/button7.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-7')
+															i.fa.fa-search-plus
+															span Site Building
+
+												// Modal
+												#project-7.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-7-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-7-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button7.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-life
+												.image-box
+													.overlay-container
+														img(src='images/button8.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-8')
+															i.fa.fa-search-plus
+															span Web Design
+
+												// Modal
+												#project-8.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-8-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-8-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button8.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-travel
+												.image-box
+													.overlay-container
+														img(src='images/button9.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-9')
+															i.fa.fa-search-plus
+															span Web Design
+
+												// Modal
+												#project-9.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-9-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-9-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button9.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-spanish
+												.image-box
+													.overlay-container
+														img(src='images/button10.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-10')
+															i.fa.fa-search-plus
+															span Site Building
+
+												// Modal
+												#project-10.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-10-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-10-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button10.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-travel
+												.image-box
+													.overlay-container
+														img(src='images/button11.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-11')
+															i.fa.fa-search-plus
+															span Web Design
+
+												// Modal
+												#project-11.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-11-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-11-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button11.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+											.col-sm-6.col-md-2-5.isotope-item.web-travel
+												.image-box
+													.overlay-container
+														img(src='images/button12.jpg', alt='')
+														a.overlay(data-toggle='modal', data-target='#project-12')
+															i.fa.fa-search-plus
+															span App Development
+
+												// Modal
+												#project-12.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project-12-label', aria-hidden='true')
+													.modal-dialog.modal-nee
+														.modal-content.transparentse
+															.modal-header
+																button.close(type='button', data-dismiss='modal')
+																	span(aria-hidden='true') ×
+																	span.sr-only Close
+																h4#project-12-label.modal-title Project Title
+															.modal-body
+																h3 Project Description
+																.row
+																	.col-md-6
+																		p
+																			| 
+																		p
+																			| 
+																	.col-md-6
+																		img(src='images/button12.jpg', alt='')
+															.modal-footer
+																button.btn.btn-sm.btn-default(type='button', data-dismiss='modal') Close
+												// Modal end
+												// portfolio items end
+												// section end
+												// section start
+												// ================
+
+				.section-nav(id='weixinimage' hidden)
+					.container
+						.row
+							.col-md-12.foot-htmlcoder
+								p(style='font-family:Microsoft YaHei').text-center
+									img(  src='images/weixin.jpg', alt='')
+					.container
+						.row
+							.col-md-12.foot-htmlcoder
+								p(style='font-size:10px').text-right
+									| Copyright © 2014 Worthy by 
+									a(target='_blank', href='http://htmlcoder.me') HtmlCoder
+									| .
